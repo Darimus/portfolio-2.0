@@ -1,5 +1,7 @@
-@import "../../../../../dist/scss/variables.scss";
-
+.explorer-aside {
+  float: left;
+  width: 20%;
+}
 p {
   color: var(--eighth-color);
   background-color: var(--first-color);

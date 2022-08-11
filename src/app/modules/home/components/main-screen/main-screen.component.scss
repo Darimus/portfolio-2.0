@@ -1,0 +1,10 @@
+.main-screen {
+  display: flex;
+  background-color: var(--third-color);
+  width: 80%;
+  flex-grow: 1;
+
+  .main-screen-p {
+    color: white;
+  }
+}
