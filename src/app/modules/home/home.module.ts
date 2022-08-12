@@ -8,6 +8,8 @@ import { MainScreenComponent } from './components/main-screen/main-screen.compon
 
 //pages
 import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AsideIconComponent } from './components/aside-icon/aside-icon.component';
 
 
 
@@ -16,7 +18,9 @@ import { HomeComponent } from './pages/home/home.component';
     HeaderComponent,
     ExplorerNavigationComponent,
     MainScreenComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    AsideIconComponent
   ],
   imports: [
     CommonModule
