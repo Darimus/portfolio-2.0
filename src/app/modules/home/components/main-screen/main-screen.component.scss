@@ -1,8 +1,8 @@
 .main-screen {
   display: flex;
-  background-color: var(--third-color);
-  width: 80%;
   flex-grow: 1;
+  height: calc(100vh - 36px - 16px);
+  background-color: var(--third-color);
 
   .main-screen-p {
     color: white;

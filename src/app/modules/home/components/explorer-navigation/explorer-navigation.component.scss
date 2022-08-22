@@ -1,8 +1,17 @@
 .explorer-aside {
+  display: flex;
+  flex-direction: column;
   float: left;
-  width: 20%;
-}
-p {
+  height: calc(100vh - 36px - 16px);
   color: var(--eighth-color);
-  background-color: var(--first-color);
+  background-color: var(--secound-color);
+
+  .explorer-aside-nav {
+    background-color: var(--secound-color);
+    height: calc(100vh);
+  
+    .explorer-aside-title {
+      background-color: var(--first-color);
+    }
+  }
 }
