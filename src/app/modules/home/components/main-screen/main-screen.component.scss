@@ -1,7 +1,9 @@
+@import "../../../../../dist/scss/variables.scss";
+
 .main-screen {
   display: flex;
   flex-grow: 1;
-  height: calc(100vh - 36px - 16px);
+  height: $width;
   background-color: var(--third-color);
 
   .main-screen-p {
