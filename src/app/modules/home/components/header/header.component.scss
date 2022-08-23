@@ -1,19 +1,72 @@
 .header-section {
-  background-color: var(--first-color);
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem ;
+  background-color: var(--first-color);
 
   .vscode-icon {
     width: 30px;
     height: 30px;
+
   }
 
-  .header-ul {
-    display: flex;
-    
-    .header-li {
-      color: var(--eighth-color);
-      list-style: none;
-      margin: 10px;
+  .header-h1 {
+    color: white;
+    margin: 0 auto;
+    flex: 1 1;
+  }
+ 
+  .header-nav {
+    flex: 1 1;
+
+    .header-ul {
+      display: flex;   
+  
+      .header-li {
+        color: var(--eighth-color);
+        list-style: none;
+        margin: 10px;
+  
+        &:hover {
+          cursor: pointer;
+        }
+      }    
     }
+  }
+
+  .header-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    color: white;
+    cursor: pointer;
+
+    span:nth-child(n) {
+      margin: 0 10px;
+    }
+    
+    .header-icons-span {
+      width: 7px;
+      border: 0.5px solid white;
+    }
+
+    .header-icons-span1{
+      content: "";
+      height: 10px;
+      width: 10px;
+      border: 1px solid white;
+    }
+
+    .header-icons-span2:after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: "\1F7A9"; /* use the hex value here... */
+      font-size: 15px; 
+      color: #FFF;
+      text-align: center;
+  }
   }
 }
