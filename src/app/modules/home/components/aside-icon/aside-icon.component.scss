@@ -5,4 +5,9 @@
   float: left;
   height: $width;
   background-color: var(--third-color);
+  padding: 0 5px;
+
+  .aside-icon-li {
+    padding: 10px 5px;
+  }
 }

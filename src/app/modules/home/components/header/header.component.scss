@@ -63,10 +63,20 @@
       bottom: 0;
       left: 0;
       right: 0;
-      content: "\1F7A9"; /* use the hex value here... */
+      content: "\1F7A9";
       font-size: 15px; 
       color: #FFF;
       text-align: center;
   }
+  }
+}
+
+@media (max-width: 900px) {
+  .header-h1 {
+    text-align: center;
+  }
+
+  .header-nav {
+    display: none;
   }
 }
