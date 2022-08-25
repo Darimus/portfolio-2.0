@@ -5,15 +5,24 @@
   flex-direction: column;
   float: left;
   height: $width;
+  width: 10vw;
   color: var(--eighth-color);
   background-color: var(--secound-color);
+
+  .explorer-aside-subitem {
+    padding: 8px 0px 8px 21.5px;
+  }
 
   .explorer-aside-nav {
     background-color: var(--secound-color);
     height: 100vh;
   
-    .explorer-aside-title {
-      background-color: var(--first-color);
+    .port-explorer-ul {
+      padding: 0px 0px 0px 21.5px;
+
+      .port-explorer-li {
+        padding: 5px 0px 0px 0px;
+      }
     }
   }
 
@@ -23,8 +32,9 @@
 
     .explorer-aside-checkbox-label{
       display: flex;
+      padding: 5px 0px 5px 5px;
       align-items: center;
-      background-color: var(--third-color);
+      background-color: var(--first-color);
       text-transform: uppercase;
       cursor: pointer;
   }
@@ -41,6 +51,10 @@
 
       ~ .port-explorer-ul{     
           display: block;
+
+          .port-explorer-li {
+            font-family: Montserrat, Source Sans Pro, sans-serif;
+          }
       }
 
     }
@@ -48,7 +62,6 @@
     #explorer-aside-checkbox:checked {
 
       ~ .explorer-aside-checkbox-label > .rotate {
-        /*animation: rotate .2s ease-in-out both;*/
         transform: rotate(-90deg);
       }
 

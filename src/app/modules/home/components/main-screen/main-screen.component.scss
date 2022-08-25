@@ -1,11 +1,24 @@
 @import "../../../../../dist/scss/variables.scss";
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--first-color);
 
-.main-screen {
-  height: $width;
-  width: 100%;
-  background-color: var(--third-color);
-
-  .main-screen-p {
-    color: white;
+  .main-screen-breadcrumb {
+    .breadcrumb {
+      display: flex;
+      padding: 8px 0px 8px 0px;
+      color: var(--sixth-color);
+      background-color: var(--secound-color);
+    }
   }
+  
+  .main-screen {
+    height: calc($width - 32px);
+  
+    .main-screen-p {
+      color: white;
+    }
+  }
+
 }
