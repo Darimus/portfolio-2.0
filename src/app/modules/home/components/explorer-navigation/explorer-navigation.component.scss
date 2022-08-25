@@ -17,7 +17,25 @@
     }
   }
 
-  #port-explorer:checked {
+  .explorer-aside-checkbox-customization{
+    display: flex;
+    flex-direction: column;
 
+    .explorer-aside-checkbox-label{
+      display: flex;
+      align-items: center;
+      cursor: pointer;
   }
+
+    #explorer-aside-checkbox {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+  
+    #explorer-aside-checkbox:checked ~ .port-explorer-ul{     
+        display: none;
+    }
+  }
+
 }
