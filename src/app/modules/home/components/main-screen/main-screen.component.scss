@@ -2,7 +2,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  background-color: var(--first-color);
+  background-color: var(--first-color); 
 
   .main-screen-breadcrumb {
     .breadcrumb {
@@ -14,11 +14,102 @@
   }
   
   .main-screen {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     height: calc($width - 32px);
-  
-    .main-screen-p {
-      color: white;
+    
+
+    .main-screen-h{
+      line-height: 1.1;
+
+
+      .main-screen-h2 {
+        position: relative;
+        width: max-content;
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        color: var(--eighth-color);
+      }
+      
+      .main-screen-h2::before,
+      .main-screen-h2::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      
+      .main-screen-h2::before {
+        background: var(--first-color);
+        animation: escrevendo 2.5s steps(24) 500ms forwards;
+      }
+      
+      .main-screen-h2::after {
+        margin-left: 0.4rem;
+        width: 0.125em;
+        background: var(--fourth-color);
+        animation: escrevendo 2.5s steps(24) 500ms forwards, 700ms pisca steps(23) infinite;
+      }
+
+
+      .main-screen-h1 {
+        font-size: 7rem;
+        font-weight: 700;
+        color: var(--eighth-color);
+      }
+
+      .main-screen-div-button{
+        margin: 50px 0 0 0;
+        width: 100%;
+
+        .main-screen-div-button-a{
+          padding: .5rem 1rem;
+          margin: 0 15px 0 0;
+          font-size: 1.7rem;
+          border: 2px solid #883fad;
+          background-color: #883fad;
+          color: var(--eighth-color);
+          cursor: pointer;
+
+          &:hover{
+            transform: scale(1.05);
+          }
+
+          &:nth-child(2){
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    .main-screen-div-image{
+      .main-screen-image{
+        width: 100%;
+      }
     }
   }
+}
 
+@keyframes pisca {
+  0% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes escrevendo {
+  to {
+    left: 100%;
+  }
 }
