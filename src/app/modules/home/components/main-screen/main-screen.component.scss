@@ -18,13 +18,14 @@
     align-items: center;
     justify-content: space-evenly;
     height: calc($width - 32px);
-    
+    background-color: var(--first-color-transparant); 
 
     .main-screen-h{
       line-height: 1.1;
 
       .main-screen-h2 {
         position: relative;
+        font-family: "Roboto", sans-serif;
         width: max-content;
         margin-bottom: 3rem;
         font-size: 2.5rem;
@@ -44,19 +45,20 @@
       
       .main-screen-h2::before {
         background: var(--first-color);
-        animation: escrevendo 2500ms steps(24) 500ms forwards;
+        animation: escrevendo 2400ms steps(23) 500ms forwards;
       }
       
       .main-screen-h2::after {
         margin-left: 0.4rem;
         width: 0.125em;
         background: var(--fourth-color);
-        animation: escrevendo 2500ms steps(23) 500ms forwards, 700ms pisca steps(23) infinite;
+        animation: escrevendo 2400ms steps(23) 500ms forwards, 700ms pisca steps(23) infinite;
       }
 
 
       .main-screen-h1 {
         font-size: 7rem;
+        font-family: 'Roboto', sans-serif;
         font-weight: 700;
         color: var(--eighth-color);
       }
