@@ -9,14 +9,15 @@
     padding-right: 20px;
     width: 50%;
     border-right: 1px solid var(--nineth-color) ;
-
+    counter-reset: p;
+    
     .main-about-h1 {
-      font-size: 2rem;
+      font-size: 1.3rem;
       margin: 0 0 10px 0;
       color: var(--fifth-color);
 
       &::after {
-        font-size: 30px;
+        font-size: 1.3rem;
         content: " {";
           color: var(--nineth-color);
       }
@@ -24,14 +25,14 @@
 
     .main-about-p {
       font-size: 1.3rem;
-      counter-reset: p;
-      margin-left: 20px;
+      width: 60%;
+      text-align: justify;  
+    }
 
-      &::before {
-        counter-increment: p;
-        content: counter(p) " ";
-        color: var(--sixth-color);
-      }
+    .main-about-p::before, .main-about-h1::before {
+      counter-increment: p;
+      content: counter(p) " ";
+      color: var(--sixth-color);
     }
   }
 
@@ -40,12 +41,11 @@
     margin: 20px;
 
     .main-skills-h2 {
-      font-size: 2rem;
       margin: 0 0 10px 0;
       color: var(--fifth-color);
 
       &::after {
-        font-size: 30px;
+        font-size: 1.3rem;
         content: " {";
         color: var(--nineth-color);
 
@@ -56,17 +56,22 @@
       counter-reset: li;
       font-size: 1.3rem;
 
+      .main-skills-ul-li {
+        margin-bottom: 7px;
+      }
+
       &::after {
-        font-size: 30px;
+        font-size: 1.3rem;
         content: " }";
         color: var(--nineth-color);
       }
 
-      .main-skills-ul-li::before {
+      .main-skills-ul-li::before, .main-skills-h2::before {
         counter-increment: li;
         content: counter(li) " ";
         color: var(--sixth-color);
       }
+
     }
   }
 }
