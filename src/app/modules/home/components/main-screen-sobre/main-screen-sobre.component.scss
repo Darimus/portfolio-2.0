@@ -8,25 +8,44 @@
     margin: 20px;
     padding-right: 20px;
     width: 50%;
-    border-right: 1px solid var(--nineth-color) ;
+    border-right: 1px solid var(--ninth-color) ;
     counter-reset: p;
+
+    &::after {
+      font-size: 1.3rem;
+      content: " }";
+      color: var(--ninth-color);
+    }
+
+
+    .main-about-span {
+
+      &::after {
+        color: green;
+        content: " <!-- Um pouco sobre mim -->";
+        font-size: 1.3rem;
+      }
+    }
+    
     
     .main-about-h1 {
       font-size: 1.3rem;
-      margin: 0 0 10px 0;
+      margin: 10px 0 10px 0;
       color: var(--fifth-color);
 
       &::after {
         font-size: 1.3rem;
         content: " {";
-          color: var(--nineth-color);
+        color: var(--ninth-color);
       }
     }
 
     .main-about-p {
-      font-size: 1.3rem;
       width: 60%;
-      text-align: justify;  
+      font-size: 1.3rem;
+      text-align: justify;
+      line-height: 1.5rem;
+
     }
 
     .main-about-p::before, .main-about-h1::before {
@@ -47,7 +66,7 @@
       &::after {
         font-size: 1.3rem;
         content: " {";
-        color: var(--nineth-color);
+        color: var(--ninth-color);
 
       }
     }
@@ -63,7 +82,7 @@
       &::after {
         font-size: 1.3rem;
         content: " }";
-        color: var(--nineth-color);
+        color: var(--ninth-color);
       }
 
       .main-skills-ul-li::before, .main-skills-h2::before {
