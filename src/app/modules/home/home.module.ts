@@ -13,6 +13,7 @@ import { AsideIconComponent } from './components/aside-icon/aside-icon.component
 import { FormsModule } from '@angular/forms';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { MainScreenSobreComponent } from './components/main-screen-sobre/main-screen-sobre.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
 
 
 
@@ -25,7 +26,8 @@ import { MainScreenSobreComponent } from './components/main-screen-sobre/main-sc
     FooterComponent,
     AsideIconComponent,
     SobreComponent,
-    MainScreenSobreComponent
+    MainScreenSobreComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule
