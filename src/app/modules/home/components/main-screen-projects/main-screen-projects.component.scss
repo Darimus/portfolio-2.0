@@ -1,9 +1,10 @@
+@import "../../../../../dist/scss/variables.scss";
 .main {
+  width: 100%;
+  height: calc($width);
   background-color: var(--first-color);
 
   .main-card {
-    display: flex;
-    justify-content: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 1.5rem;
@@ -11,12 +12,24 @@
 
     .main-card-div {
       width: 100%;
+      display: flex;
+      flex-direction: column;
       
       .main-card-div-img {
+        position: relative;
         min-width: 100%;
         max-width: 100%;
         min-height: 100%;
         max-height: 100%;
+      }
+
+      .main-card-div-body {
+        color: var(--eighth-color);
+
+        & a {
+          color: var(--eighth-color);
+          border-bottom: 2px solid var(--ninth-color);          
+        }
       }
     }
   }
