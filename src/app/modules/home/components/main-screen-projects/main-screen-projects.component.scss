@@ -13,7 +13,11 @@
     .main-card-div {
       display: flex;
       flex-direction: column;
-      padding: 50px;
+      margin: 50px;
+
+    &:hover {
+      transform: scale(1.02);
+    }
       
       .main-card-div-img {
         position: relative;

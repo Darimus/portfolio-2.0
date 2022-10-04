@@ -14,6 +14,8 @@ import { MainScreenSobreComponent } from './components/main-screen-sobre/main-sc
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { MainScreenProjectsComponent } from './components/main-screen-projects/main-screen-projects.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { MainScreenContactComponent } from './components/main-screen-contact/main-screen-contact.component';
 
 
 
@@ -29,6 +31,8 @@ import { MainScreenProjectsComponent } from './components/main-screen-projects/m
     MainScreenSobreComponent,
     ProjectsComponent,
     MainScreenProjectsComponent,
+    ContactComponent,
+    MainScreenContactComponent,
   ],
   imports: [
     CommonModule
