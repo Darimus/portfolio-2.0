@@ -14,12 +14,17 @@
   }
     .main-section-social {
       counter-reset: line;
+      font-size: 1.2rem;
 
       &>:nth-child(n)::before {
         content: counter(line);
         counter-increment: line;
         margin-right: 1rem;
         color: var(--tenth-color);
+      }
+
+      & > :nth-child(n) {
+        margin-top: 3px;
       }
 
       .main-section-social-p {
@@ -98,6 +103,10 @@
           background-color: #883fad;
           color: var(--eighth-color);
           cursor: pointer;
+
+          &:active {
+          transform: scale(.9);
+          }
         }
       }
     }
