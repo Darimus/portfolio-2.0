@@ -16,6 +16,8 @@ import { SobreComponent } from './pages/sobre/sobre.component';
 import { MainScreenProjectsComponent } from './components/main-screen-projects/main-screen-projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { MainScreenContactComponent } from './components/main-screen-contact/main-screen-contact.component';
+import { GithubComponent } from './pages/github/github.component';
+import { MainScreenGithubComponent } from './components/main-screen-github/main-screen-github.component';
 
 
 
@@ -33,6 +35,8 @@ import { MainScreenContactComponent } from './components/main-screen-contact/mai
     MainScreenProjectsComponent,
     ContactComponent,
     MainScreenContactComponent,
+    GithubComponent,
+    MainScreenGithubComponent,
   ],
   imports: [
     CommonModule
