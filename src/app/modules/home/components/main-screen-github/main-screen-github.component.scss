@@ -1,0 +1,30 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1.5rem;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  padding: 15px;
+  background-color: var(--first-color);
+
+  .name-repository {
+    color: white;
+    text-transform: capitalize;
+  }
+
+  .card {
+    max-height: 130px;
+    background-color: var(--secound-color);
+    border-radius: 15px;
+
+    .li-github {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: var(--article-bg);
+      border-radius: 5px;
+      padding: 1rem;
+    }
+  }
+
+}
