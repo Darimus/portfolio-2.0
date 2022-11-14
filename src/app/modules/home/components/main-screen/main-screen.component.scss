@@ -1,26 +1,19 @@
 @import "../../../../../dist/scss/variables.scss";
+
 .main {
   display: flex;
   flex-direction: column;
-  background-color: var(--first-color); 
+  background-color: var(--first-color);
+  height: 100%;
 
-  .main-screen-breadcrumb {
-    .breadcrumb {
-      display: flex;
-      padding: 8px 0px 8px 0px;
-      color: var(--sixth-color);
-      background-color: var(--secound-color);
-    }
-  }
-  
   .main-screen {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: calc($width - 32px);
-    background-color: var(--first-color-transparant); 
+    height: 100%;
+    background-color: var(--first-color-transparant);
 
-    .main-screen-h{
+    .main-screen-h {
       line-height: 1.1;
 
       .main-screen-h2 {
@@ -32,7 +25,7 @@
         font-weight: lighter;
         color: var(--eighth-color);
       }
-      
+
       .main-screen-h2::before,
       .main-screen-h2::after {
         content: '';
@@ -42,12 +35,12 @@
         bottom: 0;
         left: 0;
       }
-      
+
       .main-screen-h2::before {
         background: var(--first-color);
         animation: escrevendo 2400ms steps(23) 500ms forwards;
       }
-      
+
       .main-screen-h2::after {
         margin-left: 0.4rem;
         width: 0.125em;
@@ -63,11 +56,11 @@
         color: var(--eighth-color);
       }
 
-      .main-screen-div-button{
+      .main-screen-div-button {
         margin: 50px 0 0 0;
         width: 100%;
 
-        .main-screen-div-button-a{
+        .main-screen-div-button-a {
           padding: .5rem 1rem;
           margin: 0 15px 0 0;
           font-size: 1.7rem;
@@ -76,11 +69,11 @@
           color: var(--eighth-color);
           cursor: pointer;
 
-          &:hover{
+          &:hover {
             transform: scale(1.05);
           }
 
-          &:nth-child(2){
+          &:nth-child(2) {
             margin-right: 0;
             background-color: transparent;
           }
@@ -88,8 +81,8 @@
       }
     }
 
-    .main-screen-div-image{
-      .main-screen-image{
+    .main-screen-div-image {
+      .main-screen-image {
         width: 100%;
       }
     }
@@ -98,15 +91,15 @@
 
 @keyframes pisca {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   50% {
-      opacity: 1;
+    opacity: 1;
   }
 
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -117,14 +110,14 @@
 }
 
 @media (max-width: 1316px) {
-  .main{
-    .main-screen{
-      .main-screen-h{
-        .main-screen-h1{
+  .main {
+    .main-screen {
+      .main-screen-h {
+        .main-screen-h1 {
           font-size: 4rem;
         }
 
-        .main-screen-h2{
+        .main-screen-h2 {
           font-size: 2rem;
         }
       }
@@ -133,14 +126,14 @@
 }
 
 @media (max-width: 915px) {
-  .main{
-    .main-screen{
-      .main-screen-h{
-        .main-screen-h1{
+  .main {
+    .main-screen {
+      .main-screen-h {
+        .main-screen-h1 {
           font-size: 3rem;
         }
 
-        .main-screen-h2{
+        .main-screen-h2 {
           font-size: 1.5rem;
         }
       }
@@ -148,12 +141,12 @@
   }
 }
 
-@media (max-width: 888px){
-  .main{
-    .main-screen{
+@media (max-width: 888px) {
+  .main {
+    .main-screen {
       flex-direction: column;
 
-      .main-screen-h{
+      .main-screen-h {
         text-align: center;
 
         .main-screen-h2 {
@@ -172,14 +165,14 @@
 }
 
 @media (max-width: 730px) {
-  .main{
-    .main-screen{
-      .main-screen-h{
-        .main-screen-h1{
+  .main {
+    .main-screen {
+      .main-screen-h {
+        .main-screen-h1 {
           font-size: 2rem;
         }
 
-        .main-screen-h2{
+        .main-screen-h2 {
           font-size: 1.3rem;
         }
       }

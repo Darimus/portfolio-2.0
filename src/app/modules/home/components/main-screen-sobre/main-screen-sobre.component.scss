@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  height: calc(100vh - 16px - 36px);
+  height: 100%;
   background-color: var(--first-color);
   color: var(--eighth-color);
 
@@ -8,7 +8,7 @@
     margin: 20px;
     padding-right: 20px;
     width: 50%;
-    border-right: 1px solid var(--ninth-color) ;
+    border-right: 1px solid var(--ninth-color);
     counter-reset: p;
 
     &::after {
@@ -26,8 +26,8 @@
         font-size: 1.3rem;
       }
     }
-    
-    
+
+
     .main-about-h1 {
       font-size: 1.3rem;
       margin: 10px 0 10px 0;
@@ -48,7 +48,8 @@
 
     }
 
-    .main-about-p::before, .main-about-h1::before {
+    .main-about-p::before,
+    .main-about-h1::before {
       counter-increment: p;
       content: counter(p) " ";
       color: var(--sixth-color);
@@ -85,7 +86,8 @@
         color: var(--ninth-color);
       }
 
-      .main-skills-ul-li::before, .main-skills-h2::before {
+      .main-skills-ul-li::before,
+      .main-skills-h2::before {
         counter-increment: li;
         content: counter(li) " ";
         color: var(--sixth-color);

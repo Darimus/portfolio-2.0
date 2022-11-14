@@ -1,9 +1,9 @@
 @import "../../../../../dist/scss/variables.scss";
 
-.aside-icon{
+.aside-icon {
   display: flex;
   float: left;
-  height: $width;
+  height: 100%;
   background-color: var(--third-color);
   padding: 0 5px;
 

@@ -3,9 +3,10 @@
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 1.5rem;
   gap: 1.5rem;
-  margin: 1.5rem 0;
+  margin: 0;
   padding: 15px;
   background-color: var(--first-color);
+  height: 100%;
 
   .name-repository {
     color: white;
@@ -26,5 +27,4 @@
       padding: 1rem;
     }
   }
-
 }

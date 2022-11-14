@@ -1,0 +1,14 @@
+//Scroll style
+::-webkit-scrollbar {
+  background-color: black;
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid black;
+  background: var(--first-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lighten(#282a36, 10%);
+}
