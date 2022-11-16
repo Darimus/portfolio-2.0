@@ -5,9 +5,16 @@
   float: left;
   height: 100%;
   background-color: var(--third-color);
-  padding: 0 5px;
+
+  .aside-icon-nav {}
 
   .aside-icon-li {
-    padding: 10px 5px;
+    width: 100%;
+    padding: 9px;
+  }
+
+  .active {
+    background-color: var(--eleventh);
+    border-left: 2px solid var(--fourth-color);
   }
 }

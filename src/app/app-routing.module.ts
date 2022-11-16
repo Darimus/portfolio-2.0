@@ -7,11 +7,12 @@ import { ProjectsComponent } from './modules/home/pages/projects/projects.compon
 import { SobreComponent } from './modules/home/pages/sobre/sobre.component';
 
 const routes: Routes = [
-  {path: "", component: HomeComponent},
-  {path: "sobre", component: SobreComponent},
-  {path: "projects", component: ProjectsComponent},
-  {path: "contact", component: ContactComponent},
-  {path: "github", component: GithubComponent}
+  { path: "", component: HomeComponent, pathMatch: "full" },
+  { path: "sobre", component: SobreComponent },
+  { path: "projects", component: ProjectsComponent },
+  { path: "contact", component: ContactComponent },
+  { path: "github", component: GithubComponent },
+  { path: "**", redirectTo: '/' },
 ];
 
 @NgModule({

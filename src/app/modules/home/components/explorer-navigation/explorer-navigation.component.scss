@@ -17,7 +17,6 @@
     background-color: var(--secound-color);
 
     .port-explorer-ul {
-      padding: 0px 0px 0px 21.5px;
 
       .port-explorer-li {
         padding: 5px 0px 0px 0px;
@@ -51,12 +50,24 @@
       ~.port-explorer-ul {
         display: block;
 
-        .port-explorer-li {
-          font-family: Source Sans Pro, sans-serif;
+        .icon-img {
+          margin-right: 9px;
+        }
 
-          a {
-            text-decoration: none;
-            color: var(--eighth-color);
+        a {
+          text-decoration: none;
+          color: var(--eighth-color);
+
+        }
+
+        .port-explorer-li {
+          display: flex;
+          align-items: flex-start;
+          font-family: Source Sans Pro, sans-serif;
+          padding-left: 21px;
+
+          &:hover {
+            background-color: var(--third-color);
           }
         }
       }

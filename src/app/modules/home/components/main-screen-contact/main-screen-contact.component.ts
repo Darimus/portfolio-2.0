@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class MainScreenContactComponent implements OnInit {
 
 
-  constructor() {}
-  
+  constructor() { }
+
   ngOnInit(): void {
   }
 }
