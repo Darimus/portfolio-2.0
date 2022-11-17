@@ -19,6 +19,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { GithubComponent } from './pages/github/github.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 
 
@@ -38,6 +39,7 @@ import { GithubComponent } from './pages/github/github.component';
     MainScreenContactComponent,
     GithubComponent,
     MainScreenGithubComponent,
+    BreadcrumbComponent,
   ],
   imports: [
     CommonModule,

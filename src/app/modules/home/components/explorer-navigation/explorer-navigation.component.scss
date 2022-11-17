@@ -87,6 +87,12 @@
   }
 }
 
+@media (max-width: 1266px) {
+  .explorer-aside .explorer-aside-checkbox-customization #explorer-aside-checkbox~.port-explorer-ul .port-explorer-li {
+    padding-left: 5px;
+  }
+}
+
 @media (max-width: 1090px) {
   .explorer-aside {
     display: none;
