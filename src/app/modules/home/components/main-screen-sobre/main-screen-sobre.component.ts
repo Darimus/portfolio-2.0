@@ -10,6 +10,8 @@ export class MainScreenSobreComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    var h2 = document.getElementsByClassName('main-about-h2')
   }
+
 
 }

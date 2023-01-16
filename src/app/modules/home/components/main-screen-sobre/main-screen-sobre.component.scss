@@ -1,98 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200&display=swap');
+
 .main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   background-color: var(--first-color);
   color: var(--eighth-color);
+  font-family: 'jetbrains mono';
+
 
   .main-about {
-    margin: 20px;
-    padding-right: 20px;
-    width: 50%;
-    border-right: 1px solid var(--ninth-color);
-    counter-reset: p;
-
-    &::after {
-      font-size: 1.3rem;
-      content: " }";
-      color: var(--ninth-color);
-    }
-
-
-    .main-about-span {
-
-      &::after {
-        color: green;
-        content: " <!-- Um pouco sobre mim -->";
-        font-size: 1.3rem;
-      }
-    }
-
+    width: 40%;
+    margin: 50px 0;
+    text-align: center;
 
     .main-about-h1 {
-      font-size: 1.3rem;
-      margin: 10px 0 10px 0;
-      color: var(--fifth-color);
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+
+      &::before {
+        content: "<h1>";
+      }
 
       &::after {
-        font-size: 1.3rem;
-        content: " {";
-        color: var(--ninth-color);
+        content: "</h1>";
       }
     }
 
     .main-about-p {
-      width: 60%;
-      font-size: 1.3rem;
-      text-align: justify;
+      font-size: 1.2rem;
+      text-align: start;
       line-height: 1.5rem;
 
-    }
+      &::selection {
+        background-color: var(--tenth-color);
+      }
 
-    .main-about-p::before,
-    .main-about-h1::before {
-      counter-increment: p;
-      content: counter(p) " ";
-      color: var(--sixth-color);
+      &::before {
+        content: "<p>";
+      }
+
+      &::after {
+        content: "</p>";
+      }
     }
   }
 
-  .main-skills {
-    width: 50%;
-    margin: 20px;
+  .main-about-skills {
+    display: flex;
 
-    .main-skills-h2 {
-      margin: 0 0 10px 0;
-      color: var(--fifth-color);
+    .main-about-skills-wrapper {
+      font-size: 1.2rem;
+      padding: 0 20px;
 
-      &::after {
-        font-size: 1.3rem;
-        content: " {";
-        color: var(--ninth-color);
+      &:nth-child(1) {
+        border-right: 1px solid var(--ninth-color);
+      }
 
+      .main-about-h2 {
+        margin-bottom: 15px;
+
+        &::before {
+          content: "<h2>";
+        }
+
+        &::after {
+          content: "</h2>";
+        }
+      }
+
+      .main-about-ul {
+        margin: 0 15px;
+        line-height: 1.4rem;
       }
     }
+  }
 
-    .main-skills-ul {
-      counter-reset: li;
-      font-size: 1.3rem;
+  .btn-download-cv {
+    margin-top: 25px;
+    border: none;
+    width: 269px;
+    height: 60px;
 
-      .main-skills-ul-li {
-        margin-bottom: 7px;
-      }
+    font-weight: bold;
+    color: white;
+    background: #C20606;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-      &::after {
-        font-size: 1.3rem;
-        content: " }";
-        color: var(--ninth-color);
-      }
+    cursor: pointer;
 
-      .main-skills-ul-li::before,
-      .main-skills-h2::before {
-        counter-increment: li;
-        content: counter(li) " ";
-        color: var(--sixth-color);
-      }
-
+    &:active {
+      scale: .99;
     }
   }
 }
