@@ -19,8 +19,12 @@
       font-size: 1.6rem;
       margin-bottom: 20px;
 
+      .span-h1::after {
+        content: ">"
+      }
+
       &::before {
-        content: "<h1>";
+        content: "<";
       }
 
       &::after {
