@@ -9,6 +9,26 @@
   color: var(--eighth-color);
   font-family: 'jetbrains mono';
 
+  .span-tag,
+  .span-tag-2 {
+    color: var(--fourth-color);
+  }
+
+  .span-tag::after,
+  .span-tag-2::after {
+    color: var(--eighth-color);
+    content: ">"
+  }
+
+  .span-tag::before {
+    color: var(--eighth-color);
+    content: "<";
+  }
+
+  .span-tag-2::before {
+    color: var(--eighth-color);
+    content: "</";
+  }
 
   .main-about {
     width: 40%;
@@ -19,17 +39,6 @@
       font-size: 1.6rem;
       margin-bottom: 20px;
 
-      .span-h1::after {
-        content: ">"
-      }
-
-      &::before {
-        content: "<";
-      }
-
-      &::after {
-        content: "</h1>";
-      }
     }
 
     .main-about-p {
@@ -37,17 +46,6 @@
       text-align: start;
       line-height: 1.5rem;
 
-      &::selection {
-        background-color: var(--tenth-color);
-      }
-
-      &::before {
-        content: "<p>";
-      }
-
-      &::after {
-        content: "</p>";
-      }
     }
   }
 
@@ -65,13 +63,6 @@
       .main-about-h2 {
         margin-bottom: 15px;
 
-        &::before {
-          content: "<h2>";
-        }
-
-        &::after {
-          content: "</h2>";
-        }
       }
 
       .main-about-ul {
