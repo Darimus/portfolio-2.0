@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  height: 100%;
+  height: calc(100% - 36px - 31px);
   background-color: var(--first-color);
   color: var(--eighth-color);
   font-size: 1.2rem;
