@@ -1,12 +1,12 @@
 <app-header></app-header>
 <div style="display: flex; background: var(--first-color); height: 100%;">
-  <div style="display: flex; height: 100%;">
+  <div style="display: flex; height: 100%; flex: 1;">
     <app-aside-icon></app-aside-icon>
     <app-explorer-navigation></app-explorer-navigation>
   </div>
-  <div style="width: 100%;">
+  <div style="width: 100%; display: flex; flex-direction: column;">
     <app-breadcrumb></app-breadcrumb>
-    <app-main-screen-github></app-main-screen-github>
+    <app-main-screen-github style="flex: 1;"></app-main-screen-github>
   </div>
 </div>
 <app-footer></app-footer>
