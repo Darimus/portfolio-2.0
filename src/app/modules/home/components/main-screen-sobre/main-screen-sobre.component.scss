@@ -31,6 +31,9 @@
   }
 
   .main-about {
+    position: relative;
+    left: -131px;
+
     width: 40%;
     margin: 50px 0;
     text-align: center;
@@ -51,6 +54,8 @@
 
   .main-about-skills {
     display: flex;
+    position: relative;
+    left: -131px;
 
     .main-about-skills-wrapper {
       font-size: 1.2rem;
@@ -73,6 +78,9 @@
   }
 
   .btn-download-cv {
+    position: relative;
+    left: -131px;
+
     margin-top: 50px;
     border: none;
     width: 269px;
@@ -87,6 +95,16 @@
 
     &:active {
       scale: .99;
+    }
+  }
+}
+
+@media (max-width: 1589px) {
+  .main {
+    height: auto;
+
+    .btn-download-cv {
+      margin-bottom: 50px;
     }
   }
 }
