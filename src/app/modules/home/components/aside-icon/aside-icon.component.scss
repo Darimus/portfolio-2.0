@@ -3,7 +3,7 @@
 .aside-icon {
   display: flex;
   float: left;
-  height: 100%;
+  height: calc(100% + 31px);
   background-color: var(--third-color);
 
   .aside-icon-li {
@@ -16,11 +16,5 @@
     border-left: 2px solid var(--fourth-color);
     box-sizing: border-box;
     padding-left: 7px;
-  }
-}
-
-@media (max-width: 1090px) {
-  .aside-icon .aside-icon-li {
-    width: 30px;
   }
 }
